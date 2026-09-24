@@ -1,0 +1,15 @@
+package: community.lazycat.app.dewarr
+version: 0.2.3
+name: Dewarr
+description: "自托管有声书发现与自动下载（Goodreads/Hardcover 书单 + Audiobookshelf 集成）"
+min_os_version: 1.5.0
+author: logabell
+license: MIT
+homepage: https://github.com/logabell/dewarr
+locales:
+  zh:
+    name: "Dewarr"
+    description: "自托管有声书发现工具：Goodreads/Hardcover 书单同步、Audiobookshelf 集成与自动下载"
+  en:
+    name: "Dewarr"
+    description: "Self-hosted audiobook discovery, Goodreads and Hardcover lists, Audiobookshelf integration, and automatic downloads"
