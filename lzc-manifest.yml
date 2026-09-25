@@ -28,7 +28,6 @@ application:
         if (typeof payload.password === "string" && payload.password) {
           ctx.flow.set("dewarr_password", payload.password);
         }
-
     # 创建成功后持久化，供登录页自动填充
     - id: dewarr-commit-credentials
       auth_required: false
@@ -45,7 +44,6 @@ application:
         if (typeof password === "string" && password) {
           ctx.persist.set("dewarr.password", password);
         }
-
     # 免密登录：未登录时的登录表单自动填充（不自动提交）
     - id: dewarr-login-autofill
       when:
@@ -60,7 +58,6 @@ application:
             userSelector: "input[autocomplete='username']"
             passwordSelector: "input[autocomplete='current-password']"
             autoSubmit: false
-
 services:
   postgres:
     # upstream: postgres:18 (docker.io)
@@ -78,10 +75,9 @@ services:
       interval: 5s
       timeout: 5s
       retries: 12
-
   dewarr:
-    # upstream: ghcr.io/logabell/dewarr:v0.2.3
-    image: ghcr.1ms.run/logabell/dewarr:v0.2.3
+    # upstream: ghcr.io/logabell/dewarr:v0.3.2
+    image: ghcr.1ms.run/logabell/dewarr:v0.3.2
     depends_on:
       - postgres
     environment:
