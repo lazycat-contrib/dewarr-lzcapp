@@ -1,5 +1,5 @@
 package: community.lazycat.app.dewarr
-version: 0.3.2
+version: 0.3.4
 name: Dewarr
 description: "自托管有声书发现与自动下载（Goodreads/Hardcover 书单 + Audiobookshelf 集成）"
 min_os_version: 1.5.0
