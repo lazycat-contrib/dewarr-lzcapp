@@ -76,8 +76,8 @@ services:
       timeout: 5s
       retries: 12
   dewarr:
-    # upstream: ghcr.io/logabell/dewarr:v0.3.6
-    image: ghcr.1ms.run/logabell/dewarr:v0.3.6
+    # upstream: ghcr.io/logabell/dewarr:v0.3.7
+    image: ghcr.1ms.run/logabell/dewarr:v0.3.7
     depends_on:
       - postgres
     environment:
